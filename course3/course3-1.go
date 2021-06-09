@@ -42,8 +42,8 @@ func main() {
 	//	fmt.Println(index)
 	//}
 
-	//printArray(&arr1)
-	printArray2(arr3[:])
+	printArray(&arr3)
+	//printArray2(arr3[:])
 	fmt.Println(arr3)
 
 

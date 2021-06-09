@@ -20,8 +20,8 @@ func maxSubStringNoRepeat(s string) int {
 }
 
 func main() {
-	//fmt.Println(maxSubStringNoRepeat("mmonicxmje"))
-	for i, ch := range []byte("monicx") {
-		fmt.Println(i, ch)
-	}
+	fmt.Println(maxSubStringNoRepeat("mmonicxmje"))
+	//for i, ch := range []byte("monicx") {
+	//	fmt.Println(i, ch)
+	//}
 }

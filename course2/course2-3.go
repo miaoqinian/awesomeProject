@@ -57,3 +57,4 @@ func main() {
 没有char,只有rune
 原生支持复数类型
  */
+

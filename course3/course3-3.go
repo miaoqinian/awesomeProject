@@ -8,7 +8,7 @@ func printSlice(s []int) {
 
 func main() {
 	var s []int // zero value for slice is nil
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		printSlice(s)
 		s = append(s, 2*i+1)
 	}
@@ -26,7 +26,7 @@ func main() {
 	printSlice(s2)
 
 	fmt.Println("slice delete element")
-	s2 = append(s2[:3], s2[4:]...)
+	s2 = append(s2[:3], s2[8:]...)
 	printSlice(s2)
 
 	fmt.Println("slice pop front")

@@ -28,4 +28,17 @@ func main() {
 	for k, v := range m {
 		fmt.Println(k, v)
 	}
+
+	var m3 = make(map[string]interface{})       //可以让值是多类型的值
+	m3["age"] = 1
+	m3["name"] = "mimi"
+
+
+	var m4 = make(map [interface{}]interface{})
+	m4[1] = "miao"
+	m4["nian"] = 2.2
+	for k, v := range m4 {
+		fmt.Println(k, v)
+	}
+
 }

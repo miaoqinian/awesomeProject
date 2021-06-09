@@ -13,6 +13,11 @@ func swap(a,b *int){
 	fmt.Println(*a, *b)
 }
 
+func swap2(a,b int){
+	b,a = a,b
+	fmt.Println(a, b)
+}
+
 
 func main() {
 	//var a int = 2
@@ -21,6 +26,9 @@ func main() {
 	//fmt.Println(a)
 
 	var a, b = 1 ,5
+	var c, d = 3, 4
 	swap(&a,&b)
+	swap(&c,&d)
 	fmt.Println(a,b, "xxxx")
+	fmt.Println(c,d, "ddd")
 }
