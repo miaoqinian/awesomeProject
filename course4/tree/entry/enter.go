@@ -1,7 +1,6 @@
 package main
 
 import (
-	"awesomeProject/course4/tree"
 	"fmt"
 )
 
@@ -10,7 +9,7 @@ type myTreeNode struct {
 }
 
 func (myNode *myTreeNode) postLast() {
-	if myNode == nil || myNode.node == nil{
+	if myNode == nil || myNode.node == nil {
 		return
 	}
 	node := myTreeNode{myNode.node.Left}
@@ -23,7 +22,7 @@ func main() {
 	var root tree.Node
 	root = tree.Node{Value: 3}
 	root.Left = &tree.Node{}
-	root.Right = &tree.Node{5,nil,nil}
+	root.Right = &tree.Node{5, nil, nil}
 	root.Left.Right = tree.CreateNode(2)
 	root.Right.Left = new(tree.Node)
 

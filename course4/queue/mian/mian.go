@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	q := queue.Queue{3,4,5}
+	q := queue.Queue{3, 4, 5}
 	fmt.Println(q.IsEmpty())
 	q.Push(6)
 	fmt.Println(q)

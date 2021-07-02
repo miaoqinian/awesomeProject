@@ -1,4 +1,5 @@
 package main
+
 /*
 变量定义
 使用var关建字
@@ -10,20 +11,21 @@ var s1,s2 string = "hello","world"
 让编译器自动决定类型
 var a,b,i,s1,s2 = true,false,3,"hello","world"
 使用：=定义变量  只能在函数内使用。
- */
+*/
 import "fmt"
 
-func variableZero(){
+func variableZero() {
 	var a int
 	var s string
 	fmt.Println(a, s, a, a)
 }
+
 var (
 	monicx = "缪起年"
-	andy = '?'
+	andy   = '?'
 )
 
-func variableMany(){
+func variableMany() {
 	cc, dd, ee := "cc", 8, '7'
 	println(cc, dd, ee)
 }
